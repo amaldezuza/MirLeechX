@@ -34,7 +34,7 @@ class TgUploader:
         self.message_id = listener.uid
         self.user_id = listener.message.from_user.id
         self.as_doc = AS_DOCUMENT
-        self.thumb = f"Thumbnails/{self.user_id}.jpg"
+        self.thumb = f"https://te.legra.ph/file/9ee45440849d434aa5512.jpg"
         self.sent_msg = self.__app.get_messages(self.chat_id, self.message_id)
 
     def upload(self):

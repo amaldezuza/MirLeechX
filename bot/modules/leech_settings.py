@@ -21,7 +21,7 @@ def getleechinfo(from_user):
     user_id = from_user.id
     name = from_user.full_name
     buttons = button_build.ButtonMaker()
-    thumbpath = f"Thumbnails/{user_id}.jpg"
+    thumbpath = f"/app/bot/thumb.jpg"
     if (
         user_id in AS_DOC_USERS
         or user_id not in AS_MEDIA_USERS

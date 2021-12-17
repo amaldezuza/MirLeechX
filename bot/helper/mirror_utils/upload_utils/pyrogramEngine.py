@@ -34,7 +34,7 @@ class TgUploader:
         self.message_id = listener.uid
         self.user_id = listener.message.from_user.id
         self.as_doc = AS_DOCUMENT
-        self.thumb = "/app/bot/thumb.jpg"
+        self.thumb = "/MirLeechX/bot/thumb.jpg"
         self.sent_msg = self.__app.get_messages(self.chat_id, self.message_id)
 
     def upload(self):

@@ -34,7 +34,7 @@ class TgUploader:
         self.message_id = listener.uid
         self.user_id = listener.message.from_user.id
         self.as_doc = AS_DOCUMENT
-        self.thumb = "/MirLeechX/bot/thumb.jpg"
+        self.thumb = "/app/bot/thumb.jpg"
         self.sent_msg = self.__app.get_messages(self.chat_id, self.message_id)
 
     def upload(self):
@@ -79,7 +79,7 @@ class TgUploader:
                 if filee.upper().endswith(VIDEO_SUFFIXES):
                     duration = get_media_info(up_path)[0]
                     if thumb is None:
-                        thumb = take_ss(up_path)
+                        thumb = "/app/bot/thumb.jpg"
                         if self.is_cancelled:
                             os.remove(thumb)
                             return
